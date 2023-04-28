@@ -1,2 +1,2 @@
-# social-media-portfolio
+# social media portfolio
 Social Media Reference Landing Page
