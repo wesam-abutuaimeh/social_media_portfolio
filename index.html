@@ -17,36 +17,22 @@
 <body>
     <main>
         <div class="container hero">
-            <img class="personal-photo" src="imgs/personal-photo.jpg" alt="personal-photo">
-            <h1>@Wesamy</h1>
+            <img class="personal-photo" src="imgs/personal-photo.jpg" alt="personal-photo" />
+            <h3>Wesam Abutaima</h3>
+            <h4>
+                <i>Front-End Devleoper | Reactjs | NEXT.js <br />
+                    Crafting Expceptional User Experiences With Innovative Technologies.
+                </i>
+            </h4>
         </div>
+
         <div class="container">
             <ul class="social-links">
-                <li style="--i:1;">
-                    <a href="https://twitter.com/Wesam_Abutaima">
-                        <img src="imgs/twitter.png" alt="Twitter Logo" />
-                        <div>
-                            <span>Twitter</span>
-                            <span>Follow Me On Twitter</span>
-                        </div>
-                        <button class="share">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class=" " role="img" aria-hidden="false"
-                                aria-labelledby="ltclid5267252_title ">
-                                <title id="ltclid5267252_title">Share</title>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.6464 3.85353L11 4.20708L11.7071 3.49998L11.3536 3.14642L8.35355 0.146423H7.64645L4.64645 3.14642L4.29289 3.49998L5 4.20708L5.35355 3.85353L7.5 1.70708V9.49998V9.99998H8.5V9.49998V1.70708L10.6464 3.85353ZM1 5.5L1.5 5H4V6H2V15H14V6H12V5H14.5L15 5.5V15.5L14.5 16H1.5L1 15.5V5.5Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </li>
-
-                <li style="--i:2;">
+                <li>
                     <a href="https://www.linkedin.com/in/wesam-abutaima-55b100272/">
                         <img src="imgs/linkedin.png" alt="Linkedin Logo" />
                         <div>
-                            <span>Linkedin</span>
+                            <span>LinkedIn</span>
                             <span>Follow Me On Linkedin</span>
                         </div>
                         <button class="share">
@@ -62,27 +48,7 @@
                     </a>
                 </li>
 
-                <li style="--i:3;">
-                    <a href="https://api.whatsapp.com/send?phone=970598844683">
-                        <img src="imgs/whatsapp.png" alt="Whatsapp Logo" />
-                        <div>
-                            <span>Whatsapp</span>
-                            <span>Chat With Me Via Whatsapp</span>
-                        </div>
-                        <button class="share">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class=" " role="img" aria-hidden="false"
-                                aria-labelledby="ltclid5267252_title ">
-                                <title id="ltclid5267252_title">Share</title>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.6464 3.85353L11 4.20708L11.7071 3.49998L11.3536 3.14642L8.35355 0.146423H7.64645L4.64645 3.14642L4.29289 3.49998L5 4.20708L5.35355 3.85353L7.5 1.70708V9.49998V9.99998H8.5V9.49998V1.70708L10.6464 3.85353ZM1 5.5L1.5 5H4V6H2V15H14V6H12V5H14.5L15 5.5V15.5L14.5 16H1.5L1 15.5V5.5Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </li>
-
-                <li style="--i:4;">
+                <li>
                     <a href="https://github.com/wesam-abutuaimeh">
                         <img src="imgs/github.png" alt="Github Logo" />
                         <div>
@@ -102,12 +68,12 @@
                     </a>
                 </li>
 
-                <li style="--i:5;">
-                    <a href="https://mostaql.com/u/Wesam_Abutaima">
-                        <img src="imgs/mostql.png" alt="Mostql Logo" />
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=970598844683">
+                        <img src="imgs/whatsapp.png" alt="Whatsapp Logo" />
                         <div>
-                            <span>Mostql</span>
-                            <span>Show Peopel Testimonial On Mostaql</span>
+                            <span>Whatsapp</span>
+                            <span>Chat With Me Via Whatsapp</span>
                         </div>
                         <button class="share">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -121,15 +87,22 @@
                         </button>
                     </a>
                 </li>
+
             </ul>
         </div>
 
         <div class="container footer">
-            <p>Made With ❤ By Wesam Abutaima © <span class="year" id="year"></span></p>
+            <h6>
+                Made With 💜 By <span class="author">Wesam Abutaima</span> &copy;
+                <span class="year" id="year"></span>
+            </h6>
         </div>
     </main>
+
     <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
+        const yearElement = document.getElementById("year");
+        const year = new Date();
+        yearElement.textContent = year.getFullYear();
     </script>
 </body>
 
