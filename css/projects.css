@@ -74,22 +74,35 @@ h2 {
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   top: 20px;
-  transition: transform .5s linear;
-  -webkit-transition: transform .5s linear;
-  -moz-transition: transform .5s linear;
-  -ms-transition: transform .5s linear;
-  -o-transition: transform .5s linear;
+  transition: transform 0.5s linear;
+  -webkit-transition: transform 0.5s linear;
+  -moz-transition: transform 0.5s linear;
+  -ms-transition: transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
 }
 
-.alert-warning.remove{
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
+.alert-warning.remove {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
 }
 
-button{
+.alert-warning p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-warning svg {
+  width: 17px;
+  margin-right: 5px;
+  animation: infinite rotation 1800ms forwards linear;
+  -webkit-animation: infinite rotation 1800ms forwards linear;
+}
+
+button {
   border: 1px solid #ddd;
   border-radius: 3px;
   cursor: pointer;
@@ -100,12 +113,22 @@ button{
   color: #000000d5;
 }
 
-
 @media (max-width: 600px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
   .alert-warning {
     width: 50%;
- }
+  }
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-animation: infinite rotation;
+  }
 }
