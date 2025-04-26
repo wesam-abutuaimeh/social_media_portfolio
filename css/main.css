@@ -245,6 +245,7 @@ ul li a button {
   text-shadow: 0 0 5px #fff, 0 0 10px #3ab0ff, 0 0 20px #9b51e0;
   animation: animate__slideOutDown 2s ease-in-out infinite alternate,
     animate__hrefColor 2s ease-in-out infinite alternate;
+  z-index: 1000;
 }
 
 @keyframes animate__slideOutDown {
